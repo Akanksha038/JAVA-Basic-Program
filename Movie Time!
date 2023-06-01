@@ -1,0 +1,64 @@
+Mr. Vohra went to a movie with his friends. During break time they bought Pizzas, Puffs and Cold Drinks. Consider the following prices:
+
+Rs.100/Pizza
+Rs.20/Puff
+Rs.10/Cold Drink
+Generate a bill!
+
+Input Format
+
+A single line containing three integers. These integers represent the number of pizzas, puffs and cold drinks bought respectively.
+
+Constraints
+
+None
+
+Output Format
+
+Display the detailed bill. (See Sample Output)
+
+Sample Input 0
+
+10 12 5
+Sample Output 0
+
+No of Pizzas: 10
+No of Puffs: 12
+No of Cold Drinks: 5
+Total price = 1290
+ENJOY THE SHOW!!!
+Explanation 0
+
+This is the detailed bill
+
+Sample Input 1
+
+12 23 5
+Sample Output 1
+
+No of Pizzas: 12
+No of Puffs: 23
+No of Cold Drinks: 5
+Total price = 1710
+ENJOY THE SHOW!!!
+========================================================================================================================================================================
+import java.util.Scanner;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int Pi=sc.nextInt();
+        int Pu=sc.nextInt();
+        int CD=sc.nextInt();
+        int price_Pi=100*Pi;
+        int price_Pu=20*Pu;
+        int price_CD=10*CD;
+        int TP=price_Pi+price_Pu+price_CD;
+        
+        System.out.println("No of Pizzas: "+Pi);
+        System.out.println("No of Puffs: "+Pu);
+        System.out.println("No of Cold Drinks: "+CD);
+        System.out.println("Total price = "+TP);
+        System.out.println("ENJOY THE SHOW!!!");
+         }
+}
